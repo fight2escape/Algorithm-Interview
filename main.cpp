@@ -1,15 +1,14 @@
 #include <iostream>
-#include "80. Remove Duplicates from Sorted Array II.h"
+#include "75. Sort Colors.h"
 
 
 using namespace std;
 
 int main() {
-    int arr[] = {1, 1, 1, 2, 2, 3};
+    int arr[] = {1, 1, 1, 2, 2, 0};
     vector<int> vec(arr, arr + sizeof(arr)/sizeof(int));
-    int len = Solution().removeDuplicates(vec);
+    Solution().sortColors(vec);
 
-    cout<<"len : "<<len<<endl;
     for(int i=0; i<vec.size(); i++){
         cout<<vec[i]<<" ";
     }
