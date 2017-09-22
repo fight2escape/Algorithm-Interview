@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "125. Valid Palindrome.h"
+#include "345. Reverse Vowels of a String345..h"
 
 
 using namespace std;
@@ -15,22 +15,18 @@ int main() {
 //        cout<<res[i]<<" ";
 //    }
 
-    string s = "A man, a plan, a canal: Panama";
-    string s1 = ".,";
-    string s2 = "aA";
-    string s3 = "0P";
-    string s4 = "ab2a";
-    string s5 = "a.";
-    bool res1 = Solution().isPalindrome(s1);
-    bool res2 = Solution().isPalindrome(s2);
-    bool res3 = Solution().isPalindrome(s3);
-    bool res4 = Solution().isPalindrome(s4);
-    bool res5 = Solution().isPalindrome(s5);
-    cout<<"isPalindrome : "<< res1 <<endl;
-    cout<<"isPalindrome : "<< res2 <<endl;
-    cout<<"isPalindrome : "<< res3 <<endl;
-    cout<<"isPalindrome : "<< res4 <<endl;
-    cout<<"isPalindrome : "<< res5 <<endl;
+    string s2 = "hello";
+    string s3 = "leetcode";
+    string s4 = "hEllo";
+    string s5 = "leEtcode";
+    string res2 = Solution().reverseVowels(s2);
+    string res3 = Solution().reverseVowels(s3);
+    string res4 = Solution().reverseVowels(s4);
+    string res5 = Solution().reverseVowels(s5);
+    cout<<"reverse to : "<< res2 <<endl;
+    cout<<"reverse to : "<< res3 <<endl;
+    cout<<"reverse to : "<< res4 <<endl;
+    cout<<"reverse to : "<< res5 <<endl;
 
 
     return 0;
