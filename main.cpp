@@ -1,16 +1,14 @@
 #include <iostream>
-#include "Search(Set-Map)/219. Contains Duplicate II.h"
+#include "Search(Set-Map)/220. Contains Duplicate III.h"
 
 
 using namespace std;
 
 int main() {
-
-    vector<int> vec = {1,2,1};
-    int k = 1;
-
-    bool res = Solution().containsNearbyDuplicate(vec,k);
-
+    vector<int> vec = {-2147483648,-2147483647};
+    int k = 3;
+    int v = 3;
+    bool res = Solution().containsNearbyAlmostDuplicate(vec,k,v);
     cout<<"res:"<<res<<endl;
 
     return 0;
