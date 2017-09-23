@@ -1,15 +1,18 @@
 #include <iostream>
-#include "Search(Set-Map)/220. Contains Duplicate III.h"
-
+#include "Linked-List/92. Reverse Linked List II.h"
+#include "Linked-List/CreateLinkedList.h"
 
 using namespace std;
 
 int main() {
-    vector<int> vec = {-2147483648,-2147483647};
-    int k = 3;
-    int v = 3;
-    bool res = Solution().containsNearbyAlmostDuplicate(vec,k,v);
-    cout<<"res:"<<res<<endl;
+    int arr[] = {3};
+    int size = sizeof(arr)/sizeof(int);
+    ListNode *head = CreateLinkedList(arr,size);
+
+    ListNode *res = Solution().reverseBetween(head,1,1);
+
+    PrintLinkedList(res);
+    DeleteLinkedList(res);
 
     return 0;
 }
