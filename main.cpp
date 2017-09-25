@@ -1,15 +1,12 @@
 #include <iostream>
-#include "Stack-Queue/144. Binary Tree Preorder Traversal.h"
+#include "Stack-Queue/279. Perfect Squares.h"
 using namespace std;
 
 int main() {
 
-    TreeNode *root = CreateBinaryTree();
-    vector<int> res = Solution().preorderTraversal(root);
-
-    for(auto i=res.begin(); i!=res.end(); i++){
-        cout<<*i<<" ";
-    }
+    int n = 12;
+    int res = Solution().numSquares(n);
+    cout<<res<<endl;
 
     return 0;
 }
