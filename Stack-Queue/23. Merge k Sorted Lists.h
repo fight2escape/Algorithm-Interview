@@ -24,21 +24,17 @@ public:
         if( pq.empty() ){ return NULL; }
 
         ListNode* res = new ListNode(0);
-        ListNode* cur = new ListNode(NULL);
-        res->next = cur;
+        ListNode* cur = res;
 
         while( !pq.empty() ){
             ListNode *min = pq.top().second;
             pq.pop();
 
-            cur->val = min->val;
+            cur->next = new ListNode(min->val);
+            cur = cur->next;
             min = min->next;
             if(min != NULL){
                 pq.push( make_pair(min->val, min) );
-            }
-            if( !pq.empty() ){
-                cur->next = new ListNode(NULL);
-                cur = cur->next;
             }
         }
         cur = res->next;
