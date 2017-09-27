@@ -1,15 +1,13 @@
-#include <iostream>
-#include "BinaryTree-Recursive/111. Minimum Depth of Binary Tree.h"
+#include<iostream>
+#include<iomanip>
+#include "Dynamic/343. Integer Break.h"
+
 using namespace std;
 
-int main() {
-//    int tree[] = {0,NULL};
-    int tree[] = {0,NULL,4};
-//    int tree[] = {0,2,4,1,NULL,3,-1,5,1,NULL,6,NULL,8};
-    int size = sizeof(tree)/sizeof(int);
-    TreeNode *root = CreateBinaryTree(tree, size);
+int main(){
 
-    int res = Solution().minDepth(root);
+    int vec = 10;
+    int res = Solution().integerBreak(vec);
     cout<<res<<endl;
 
     return 0;
