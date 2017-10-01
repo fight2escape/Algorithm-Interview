@@ -29,7 +29,7 @@ public:
             res[i] = w[0]<c ? 0 : v[0];
         }
         for(int i=1; i<n; i++){
-            for(int j=w[i]; j<=c; j++){
+            for(int j=c; j>=w[i]; j--){
                 res[j] = max(res[j], v[i] + res[ j-w[i] ]);
             }
         }
@@ -125,3 +125,8 @@ private:
 };
 
 #endif //ALGORITHM_INTERVIEW2_0_1_BAG_H
+//vector<int> w = {1, 2, 3};
+//vector<int> v = {6, 10, 12};
+//int c = 5;
+//int res = Knapsack01().knapsack01(w, v, c);
+//cout<<res<<endl;
