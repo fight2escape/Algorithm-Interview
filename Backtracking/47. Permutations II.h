@@ -49,3 +49,20 @@ private:
 };
 
 #endif //ALGORITHM_INTERVIEW2_47_PERMUTATIONS_II_H
+//    vector<int> vec = {0,-1,-1};
+//    vector<int> vec = {0,1,1};
+
+//    time_t start = clock();
+//    vector<vector<int>> res = Solution().permuteUnique(vec);
+//    time_t end = clock();
+//
+//    double spendTime = double(end-start)/(double)CLOCKS_PER_SEC;
+//    cout<<res.size()<<endl;
+//    cout<<"spendTime: "<<spendTime<<endl;
+//
+//    for(auto re : res){
+//        for(auto r:re){
+//            cout<<r;
+//        }
+//        cout<<endl;
+//    }
