@@ -1,19 +1,21 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
-#include "Backtracking/200. Number of Islands.h"
+#include "Backtracking/51. N-Queens.h"
 
 using namespace std;
 
 int main(){
 
-//    vector<vector<char>> vec = {
-//            {'1','1','1','1','0'},
-//            {'1','1','0','1','0'},
-//            {'1','1','0','0','0'},
-//            {'0','0','0','0','0'}
-//    };
-//    cout<< Solution().numIslands(vec) <<endl;
-
+//    int n = 8;
+//    vector<vector<string>> res = Solution().solveNQueens(n);
+//    int i=1;
+//    for(auto re : res){
+//        cout<<i++<<"-------------"<<endl;
+//        for(auto r : re){
+//            cout<<r<<endl;
+//        }
+//        cout<<endl;
+//    }
     return 0;
 }
