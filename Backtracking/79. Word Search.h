@@ -57,15 +57,20 @@ private:
     }
 };
 
-#endif //ALGORITHM_INTERVIEW2_79_WORD_SEARCH_H
+class Test{
+public:
+    void test(){
+        vector<vector<char>> vec = {
+                {'A','B','C','E'},
+                {'S','F','C','S'},
+                {'A','D','E','E'}
+        };
+        string word = "ABCCED";
+//        string word = "SEE";
+//        string word = "ABCB";
+//        string word = "";
+        cout<< Solution().exist(vec, word) <<endl;
+    }
+};
 
-//    vector<vector<char>> vec = {
-//            {'A','B','C','E'},
-//            {'S','F','C','S'},
-//            {'A','D','E','E'}
-//    };
-//    string word = "ABCCED";
-//    string word = "SEE";
-//    string word = "ABCB";
-//    string word = "";
-//    cout<< Solution().exist(vec, word) <<endl;
+#endif //ALGORITHM_INTERVIEW2_79_WORD_SEARCH_H
