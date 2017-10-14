@@ -60,4 +60,16 @@ TreeNode* CreateBinaryTree(int arr[], int n){
     return root;
 }
 
+void InorderBST(TreeNode* root){
+    if(root){
+        if(root->left){
+            InorderBST(root->left);
+        }
+        printf("%d ", root->val);
+        if(root->right){
+            InorderBST(root->right);
+        }
+    }
+}
+
 #endif //ALGORITHM_INTERVIEW2_BINARYTREE_H
