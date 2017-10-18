@@ -1,4 +1,9 @@
-//#include "Stack-Queue/126. Word Ladder II.h"
+//
+// Created by Shinelon on 2017/10/18.
+//
+
+#ifndef ALGORITHM_INTERVIEW2_替换空格_H
+#define ALGORITHM_INTERVIEW2_替换空格_H
 
 #include <iostream>
 using namespace std;
@@ -45,7 +50,4 @@ public:
     }
 };
 
-int main(){
-    Test().test();
-    return 0;
-}
+#endif //ALGORITHM_INTERVIEW2_替换空格_H
