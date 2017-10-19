@@ -5,7 +5,7 @@
 #ifndef ALGORITHM_INTERVIEW2_199_BINARY_TREE_RIGHT_SIDE_VIEW_H
 #define ALGORITHM_INTERVIEW2_199_BINARY_TREE_RIGHT_SIDE_VIEW_H
 
-#include "BinaryTree.h"
+#include "../BinaryTree-Recursive/BinaryTree.h"
 #include <queue>
 #include <vector>
 
