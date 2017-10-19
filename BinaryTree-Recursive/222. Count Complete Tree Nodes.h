@@ -15,7 +15,7 @@ public:
      * 左右子树深度相同则直接计算，否则递归
      * 位运算代替pow性能翻番
      * @param root
-     * @return 
+     * @return
      */
     int countNodes(TreeNode* root) {
         if(!root) return 0;
